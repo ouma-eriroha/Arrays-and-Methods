@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX1</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+<script>
+    const persons = [
+        { name: "moncef", age: 13 },
+        { name: "behija", age: 23 },
+        { name: "ala", age: 18 }
+
+    ];
+    console.log(persons);
+    const MajeurMineur = persons.map(person => {
+        if (person.age >= 18) {
+            person.status = "Majeur";
+
+        }
+        else {
+            person.status = "Mineur";
+
+        }
+        return persons
+    }
+    );
+
+    console.log(persons);
+
+   
+</script>

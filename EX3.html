@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX3</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+<script>
+    const users = [
+        {
+            name: "sarah", comment: "j'aime ce poste <3"
+        },
+        {
+            name: "monya", comment: "le poste est null :("
+        },
+        {
+            name: "carlos", comment: "salut l'algerie "
+        }
+    ]
+    const MoodDetect = users.map((u) => {
+        if (u.comment.includes("<3")) {
+            u.etat = "heureux"
+            delete(u.comment)
+        }
+        else if (u.comment.includes(":(")) {
+            u.etat = "trist"
+            delete(u.comment)
+
+        }
+        else {
+            u.etat = "neutre"
+            delete(u.comment)
+        }
+    })
+    console.log(users)
+</script>
